@@ -64,8 +64,11 @@ The full measurements are in [docs/VALIDATION.md](docs/VALIDATION.md), and the s
 
 ## Why there is no 8-bit version
 
-It gave the same image quality but ran slower on Apple Silicon: 218 s against 193 s at 2048×2048. Unless streamed,
-it also needed 27 GB of memory. Its only advantage would be a smaller download.
+On an M4 Pro it gave the same image quality but ran slower: 218 s against 193 s at 2048×2048. Unless streamed, it
+also needed 27 GB of memory. Its only advantage would be a smaller download. For quantized weights, see
+[mlx-vlm](https://github.com/Neywa-Labs/mlx-vlm), which supports MiniMax-H3-Image at
+[8-bit](https://huggingface.co/nativ-community/MiniMax-H3-Image-8bit) and
+[4-bit](https://huggingface.co/nativ-community/MiniMax-H3-Image-4bit).
 
 ## Examples
 
