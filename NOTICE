@@ -1,0 +1,13 @@
+minimax-h3-image-mlx
+Copyright 2026 Felix Brener. Licensed under the Apache License, Version 2.0 (LICENSE).
+
+This software contains code ported from Hugging Face diffusers (MiniMax-H3-Image transformer, VAE, scheduler and
+modular pipeline; Copyright 2026 The MiniMax and HuggingFace Teams) and Hugging Face transformers (Qwen3-VL;
+Copyright The Qwen Team and The HuggingFace Inc. team), both under the Apache License, Version 2.0. The ported
+files were modified: they were rewritten for MLX.
+
+The MiniMax-H3-Image model weights are NOT covered by this license. They are licensed under the MiniMax-H3-Image
+Community License Agreement (https://huggingface.co/MiniMaxAI/MiniMax-H3-Image/blob/main/LICENSE):
+"MiniMax-H3-Image is licensed under the MiniMax-H3-Image Community License Agreement, Copyright (c) 2026 MiniMax.
+All Rights Reserved." That agreement excludes the European Union, the United Kingdom, the Republic of Korea and the
+United States of America from its territory, and its Acceptable Use Policy binds every user of the weights.

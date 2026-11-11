@@ -1,0 +1,7 @@
+__pycache__/
+*.egg-info/
+.venv/
+*.png
+!examples/*.png
+*.npz
+!docs/*.jpg

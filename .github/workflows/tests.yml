@@ -1,0 +1,12 @@
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: macos-14  # Apple Silicon; torch-dependent parity tests skip themselves when torch is absent
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv venv --python 3.12 && uv pip install -e ".[test]"
+      - run: MINIMAX_H3_MLX_TEST_CPU=1 uv run pytest -q
