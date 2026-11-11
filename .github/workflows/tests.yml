@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   test:
-    runs-on: macos-14  # Apple Silicon; torch-dependent parity tests skip themselves when torch is absent
+    runs-on: macos-latest  # Apple Silicon; torch-dependent parity tests skip themselves when torch is absent
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
