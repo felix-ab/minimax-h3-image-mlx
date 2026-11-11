@@ -10,7 +10,7 @@ Run [MiniMax-H3-Image](https://huggingface.co/MiniMaxAI/MiniMax-H3-Image) on App
 
 Unofficial, and not affiliated with MiniMax. **Powered by MiniMax-H3-Image.**
 
-| | |
+| At a glance | |
 |---|---|
 | Weights | [VisualInference/MiniMax-H3-Image-MLX-bf16](https://huggingface.co/VisualInference/MiniMax-H3-Image-MLX-bf16): 94 GB, gated (accept the licence; approval is automatic) |
 | 4736×3552 (16.8 MP), M4 Pro Mac mini | ~17 min, 14.7 GB peak memory |
@@ -102,8 +102,8 @@ short:
 
 - **float32:** MLX and PyTorch (diffusers / transformers, stock modules) agree. The transformer velocity differs
   by 5e-6, and six denoising steps leave the latent within 3e-5.
-- **bf16:** this model is chaotic in bf16, so two correct implementations disagree in fine detail. Against float32
-  truth, MLX lands 28.4 dB away on average over four cases, PyTorch-MPS 26.7 dB.
+- **bf16:** this model is chaotic in bf16, so two correct implementations disagree in fine detail. Image PSNR
+  against float32 truth averages 28.4 dB for MLX and 26.7 dB for PyTorch-MPS over four cases (higher is closer).
 
 ## Why there is no 8-bit tier
 
